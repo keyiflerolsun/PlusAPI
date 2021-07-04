@@ -3,20 +3,17 @@
 from setuptools import setup
 from io import open
 
-with open(f'requirements.txt') as dosya:
-    GEREKSINIM = dosya.read().splitlines()
-
 setup(
-    author       = 'keyiflerolsun',
-    author_email = 'keyiflerolsun@gmail.com',
+    author       = "keyiflerolsun",
+    author_email = "keyiflerolsun@gmail.com",
 
-    packages     = ['PlusAPI'],
+    packages     = ["PlusAPI"],
 
-    name         = 'PlusAPI',
-    version      = '0.0.1',
-    url          = 'https://github.com/keyiflerolsun/PlusAPI',
-    description  = 'PlusAPI | Piyasa Verileri | Python',
-    keywords     = 'PlusAPI',
+    name         = "PlusAPI",
+    version      = "0.0.2",
+    url          = "https://github.com/keyiflerolsun/PlusAPI",
+    description  = "PlusAPI | Piyasa Verileri | Python",
+    keywords     = ["PlusAPI", "HisseVeri", "KriptoVeri"],
 
     long_description_content_type   = "text/markdown",
     long_description                = "".join(open("README.md", encoding="utf-8").readlines()),
@@ -30,5 +27,8 @@ setup(
     ],
 
     python_requires     = '>=3.6',
-    install_requires    = GEREKSINIM
+    install_requires    = [
+        "requests_html",
+        "simplejson"
+    ]
 )

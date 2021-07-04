@@ -83,10 +83,10 @@ class PlusAPI:
 
         return istek['data']
 
-bakalim = PlusAPI("a3d46c9ce8066b7e07c48cb4e069763")
-print(bakalim.hisse_ver("SASA"))
-print(bakalim.hisse_sepet)
-print(bakalim.kripto_ver("BTC"))
-print(bakalim.kripto_haber)
-print(bakalim.kripto_sepet)
+# bakalim = PlusAPI("a3d46c9ce8066b7e07c48cb4e069763")
+# print(bakalim.hisse_ver("SASA"))
+# print(bakalim.hisse_sepet)
+# print(bakalim.kripto_ver("BTC"))
+# print(bakalim.kripto_haber)
+# print(bakalim.kripto_sepet)
 # print(bakalim.__dict__)
